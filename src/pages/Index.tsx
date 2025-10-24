@@ -18,55 +18,45 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative bg-primary text-white py-20 px-6 animate-fade-in">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h1 className="text-5xl font-bold leading-tight">
-                ООО "Азиаточка на час"
-              </h1>
-              <p className="text-xl text-slate-100 leading-relaxed">
-                Профессиональный сервис компании для вашего комфорта
-              </p>
-              <Button 
-                size="lg" 
-                variant="secondary"
-                className="mt-6 transition-transform duration-200 hover:scale-105 text-lg px-8 py-6"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                <Icon name="Phone" size={20} className="mr-2" />
-                Связаться с нами
-              </Button>
-            </div>
-            <div className="relative animate-scale-in">
+          <div className="text-center space-y-8">
+            <h1 className="text-5xl font-bold leading-tight">
+              ООО "Азиаточка на час"
+            </h1>
+            
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mt-8">
               <img 
-                src="https://v3b.fal.media/files/b/lion/9-lOCL6vPx48OgJD7vNxM_output.png"
-                alt="Компания"
-                className="rounded-2xl shadow-2xl w-full object-cover max-h-96"
+                src="https://cdn.poehali.dev/files/cc4aba94-599c-44c9-8f3c-57149f89c9a7.jpg"
+                alt="Наш сервис"
+                className="rounded-2xl shadow-2xl w-full object-cover h-80 animate-scale-in"
               />
+              <img 
+                src="https://cdn.poehali.dev/files/5bc7c342-fae9-4ce7-9997-d6c7e2fa92e6.jpg"
+                alt="Наш сервис"
+                className="rounded-2xl shadow-2xl w-full object-cover h-80 animate-scale-in"
+                style={{ animationDelay: '0.2s' }}
+              />
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 max-w-3xl mx-auto mt-8">
+              <p className="text-xl text-slate-100 leading-relaxed mb-4">
+                Вам скучно и одиноко? Вы хотите выпить но рядом никого? Вас все бросили или вы просто хотите пообщаться с кем-то? Звоните
+              </p>
+              <p className="text-2xl font-bold text-yellow-300 mb-6">
+                О цене договоримся
+              </p>
+              <a 
+                href="tel:+79962655358"
+                className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-full text-2xl font-bold hover:bg-slate-100 transition-all hover:scale-105"
+              >
+                <Icon name="Phone" size={28} />
+                +7 (996) 265-53-58
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <Card className="p-8 md:p-12 shadow-lg animate-fade-in">
-            <div className="flex items-start gap-6">
-              <div className="bg-primary/10 p-4 rounded-full">
-                <Icon name="MessageCircle" size={32} className="text-primary" />
-              </div>
-              <div className="flex-1">
-                <h2 className="text-3xl font-bold text-slate-800 mb-4">
-                  О нашем сервисе
-                </h2>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  Вам скучно и одиноко? Вы хотите выпить но рядом никого? Вас все бросили или вы просто хотите пообщаться с кем-то? Звоните
-                </p>
-              </div>
-            </div>
-          </Card>
-        </div>
-      </section>
+
 
       {/* Schedule Section */}
       <section className="py-16 px-6 bg-white">
@@ -106,11 +96,11 @@ const Index = () => {
               <h2 className="text-4xl font-bold">Свяжитесь с нами</h2>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 inline-block">
                 <a 
-                  href="tel:+79999999999" 
+                  href="tel:+79962655358" 
                   className="text-3xl md:text-4xl font-bold hover:text-blue-200 transition-colors flex items-center gap-4"
                 >
                   <Icon name="Phone" size={36} />
-                  +7 (999) 999-99-99
+                  +7 (996) 265-53-58
                 </a>
               </div>
               <p className="text-xl text-slate-100 max-w-2xl mx-auto">
@@ -119,7 +109,7 @@ const Index = () => {
               <div className="flex flex-wrap justify-center gap-4 pt-4">
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Icon name="MapPin" size={20} />
-                  <span>Москва</span>
+                  <span>Саратов</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Icon name="Mail" size={20} />
